@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="cryptojs/crypto-js.js"></script>
+    <script src="noun_list.js"></script>
+    <script src="special_characters.js"></script>
+    <script src="generator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Mr. Archive</h1>
+
+    <h3>Service name</h3>
+    <p>Remember proper capitalization!</p>
+    <input type='text' id="input">
+
+    <h3>Number of words</h3>
+    <input type="number" value=2 id="length">
+
+    <h3>Master seed</h3>
+    <input type="text" id="master_seed">
+
+    <h3>Scramble seed</h3>
+    <input type="text" id="scramble_seed">
+
+    <br><br>
+
+    <div>
+      <button id="generate" class="generate" onclick="generatepw()" onmousedown="button_down('generate')" onmouseup="button_up('generate')">V1</button>
+      <button id="generate2" class="generate" onclick="generatepw2()" onmousedown="button_down('generate2')" onmouseup="button_up('generate2')">V2</button>
+    </div>
+
+    <br><br>
+
+    <input type="text" id="password">
+
+
+  </body>
+  <script src="ui.js"></script>
+</html>
